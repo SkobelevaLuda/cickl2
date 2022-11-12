@@ -1,39 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        // задание 1
-        System.out.println(" Задание 1 ");
-        int accumulation = 15000;
-        int total = 0;
-        int d = 0;
-        while (total <= 2459000) {
-            d += 1;
-            total = total + total / 100;
-            total = total + accumulation;
-            System.out.println(" Месяц " + d + ", сумма накоплений равна " + total + " рублей");
-        }
-        // задание 2
-        System.out.println(" Задание 2 ");
-        int a = 0;
-        while (a <= 9) {
-            a = a + 1;
-            System.out.println(a);
-        }
-        {
-            for (a = 10; a >= 1; a--) {
-                System.out.println(a);
-            }
-        }
 
-        // задание 3
-        System.out.println(" Задание 3 ");
-        int population = 12_000_000;
-        int birthRate = 17;
-        int mortality = 8;
-        int growth = population/1000*(birthRate-mortality);
-        for (int year=1; year<=10; year++){
-            population=population+growth;
-            System.out.println( " Год " +year+ " численность населения составляет " + population );
-        }
         // задание 2-1
         System.out.println( " Задание 2-1 ");
 
@@ -62,8 +29,8 @@ public class Main {
         }
         // задание 2-3
         System.out.println( " Задание 2-3 ");
-        accumulation = 15000;
-        total = 0;
+        int accumulation = 15000;
+        int total = 0;
         for (month =1; month<=108; month++) {
             total = total + total * 7 / 100 / 12;
             total = total + accumulation;
